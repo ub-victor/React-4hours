@@ -1,9 +1,9 @@
-import  Header  from './Header.jsx';
-
+import Card from "./Card";
 function App() {
 
   return (
-    <Header/>
+    <Card/>
+    
   );
 }
 
