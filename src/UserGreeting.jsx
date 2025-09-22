@@ -1,4 +1,4 @@
-const UserGreeting = ({isLoggedIn, username}) => {
+const UserGreeting = ({isLoggedIn = true, username ="Guess"}) => {
     // if(isLoggedIn){
     //     return <h2>Welcome {username}</h2>
     // }else{
@@ -9,8 +9,13 @@ const UserGreeting = ({isLoggedIn, username}) => {
     //         ? <h2 className="welcome">Welcome {username}</h2>
     //         : <h2 className="login">Please log in to continue</h2>
     // );
+    const welcome = <h2 className="welcome">Welcome {username}</h2>;
+    const login = <h2 className="login">Please log in to continue</h2>;
 
-    
+    return(
+        isLoggedIn? welcome : login
+    );
+
 }
  
 export default UserGreeting;
