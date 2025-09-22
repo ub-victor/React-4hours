@@ -4,11 +4,13 @@ const UserGreeting = ({isLoggedIn, username}) => {
     // }else{
     //     return <h2>Please log in the continue</h2>
     // }
-    return (
-        isLoggedIn
-            ? <h2>Welcome {username}</h2>
-            : <h2>Please log in to continue</h2>
-    );
+    // return (
+    //     isLoggedIn
+    //         ? <h2 className="welcome">Welcome {username}</h2>
+    //         : <h2 className="login">Please log in to continue</h2>
+    // );
+
+    
 }
  
 export default UserGreeting;
